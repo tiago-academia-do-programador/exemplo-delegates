@@ -75,7 +75,7 @@ namespace DelegatesExampleApp.ConsoleApp.ModuloAluno
 
             List<Aluno> alunosOrdenados = new List<Aluno>(alunos);
 
-            alunosOrdenados.Sort( (Aluno a, Aluno b) => b.Turma.CompareTo(a));
+            alunosOrdenados.Sort( (Aluno a, Aluno b) => b.Turma.CompareTo(a.Turma));
 
             foreach (Aluno aluno in alunosOrdenados)
             {
